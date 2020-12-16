@@ -1,8 +1,6 @@
 import searchAddress from "./services/searchAddress";
 import { Response } from "express";
-
 import searchCreditors from "./services/searchCreditors";
-
 import Address from "./models/address.model";
 import Person from "./models/person.model";
 import Summary from "./models/summary.model";
