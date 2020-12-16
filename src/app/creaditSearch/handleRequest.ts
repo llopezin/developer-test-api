@@ -13,7 +13,7 @@ export async function handleRequest(
   body: CreditSearchRequestBody,
   res: Response
 ): Promise<void> {
-  //Get address data containing ID, needed get creditors data
+  //Get address data containing ID, needed to get creditors data
   const preparedAddressData: AddressRequestBody = new Address(body).requestBody;
   const addressResponse = await searchAddress(preparedAddressData);
 
