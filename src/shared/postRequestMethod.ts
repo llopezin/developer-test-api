@@ -2,8 +2,8 @@ import fetch = require("node-fetch");
 
 export default async function makePostRequest(
   url: string,
-  body: string
-): Promise<JSON> {
+  body: any
+): Promise<any> {
   const headers = {
     "Content-Type": "application/json",
   };

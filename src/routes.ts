@@ -1,6 +1,6 @@
 import { Application } from "express";
 import testRoutes from "./routes/test.routes";
-import { handleRequest } from "./app/creditors/handleRequest";
+import { handleRequest } from "./app/creaditSearch/handleRequest";
 
 export default (app: Application): void => {
   app.post("/credit-search", (req, res) => {
