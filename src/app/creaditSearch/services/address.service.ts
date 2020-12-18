@@ -5,8 +5,10 @@ import {
   AddressRes,
 } from "../models/requests/addressRequest.model";
 
-export default async (body: AddressRequestBody): Promise<AddressRes> => {
-  const address = await makePostRequest(ENDPOINTS.ADDRESSES, body);
+export default class AdressService {
+  async getAddress(body: AddressRequestBody): Promise<AddressRes> {
+    const address = await makePostRequest(ENDPOINTS.ADDRESSES, body);
 
-  return address;
-};
+    return address;
+  }
+}
